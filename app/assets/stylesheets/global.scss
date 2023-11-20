@@ -1,0 +1,25 @@
+// global.scss
+
+.flash {
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  
+    &.notice {
+      border-color: #1e7e34;
+      background-color: #dff0d8;
+      color: #155724;
+    }
+  
+    &.alert {
+      border-color: #721c24;
+      background-color: #f8d7da;
+      color: #721c24;
+    }
+  }
+  
+  .alert-danger {
+    color: red;
+    /* 其他样式 */
+  }
