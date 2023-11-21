@@ -1,0 +1,38 @@
+<!-- app/views/layouts/_header.html.erb -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light custom-navbar">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="<%= asset_path('logo.png') %>" alt="Logo" class="custom-logo">
+    </a>
+    <!-- Toggler/collapsible Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto navbar-custom-menu"> <!-- 注意这里的 ms-auto -->
+        <li class="nav-item active nav-item-custom">
+          <a class="nav-link" href="#">首页 <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item nav-item-custom">
+          <a class="nav-link" href="#">帮助手册</a>
+        </li>
+        <li class="nav-item nav-item-custom">
+          <a class="nav-link" href="#">关于我们</a>
+        </li>
+        <li class="nav-item nav-item-custom">
+          <a class="nav-link" href="#">加入我们</a>
+        </li>
+        <li class="nav-item nav-item-custom">
+          <a class="nav-link" href="#">客户服务</a>
+        </li>
+        <li class="nav-item nav-item-custom">
+          <a class="nav-link" href="#">VIP服务</a>
+        </li>
+        <!-- More items -->
+      </ul>
+    </div>
+  </div>
+</nav>
+

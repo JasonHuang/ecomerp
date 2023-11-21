@@ -23,3 +23,21 @@
     color: red;
     /* 其他样式 */
   }
+
+  .navbar-custom-menu {
+    margin-left: 2rem; /* 或者您想要的任何值 */
+  }
+  .nav-item-custom {
+    margin-right: 2rem; /* 或者您想要的任何值 */
+  }
+  .custom-navbar {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .navbar-custom-menu .nav-link {
+    font-size: 1.1rem; /* 调整字体大小 */
+    // color: black !important; /* 设置字体颜色为黑色 */
+  }
+  .custom-logo {
+    height: 50px; /* 或者您需要的尺寸 */
+  }

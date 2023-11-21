@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "yarn": "^1.22.21"
+  },
+  "name": "ecomerp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/JasonHuang/ecomerp.git",
+  "author": "Knight Mare <jasonhpx@outlook.com>",
+  "license": "MIT"
+}

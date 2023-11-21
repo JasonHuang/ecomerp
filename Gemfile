@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "2.7.0"
+ruby "3.1.4"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.2"
@@ -69,4 +69,5 @@ end
 
 gem 'bcrypt', '~> 3.1.7'
 gem 'sassc-rails'
-#gem 'error_highlight', '>= 0.4.0'
+gem 'execjs'
+gem 'bootstrap'

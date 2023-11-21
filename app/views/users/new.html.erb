@@ -1,29 +1,41 @@
 <h1>Sign Up</h1>
-<%= form_with(model: @user, url: users_path) do |form| %>
-<% if @user.errors.any? %>
-<div id="error_explanation">
-    <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
-    <ul>
-    <% @user.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-    <% end %>
-    </ul>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">  
+      <%= form_with(model: @user, local: true, class: "needs-validation", novalidate: true) do |form| %>
+      <% if @user.errors.any? %>
+      <div id="error_explanation">
+          <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+          <ul>
+          <% @user.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+          <% end %>
+          </ul>
+      </div>
+      <% end %>
+
+        <div class="mb-3">
+          <%= form.label :name, class: "form-label" %>
+          <%= form.text_field :name, class: "form-control", required: true %>
+        </div>
+
+        <div class="mb-3">
+          <%= form.label :email, class: "form-label" %>
+          <%= form.email_field :email, class: "form-control", required: true %>
+        </div>
+
+        <div class="mb-3">
+          <%= form.label :password, class: "form-label" %>
+          <%= form.password_field :password, class: "form-control", required: true %>
+        </div>
+
+        <div class="mb-3">
+          <%= form.label :password_confirmation, "Confirm Password", class: "form-label" %>
+          <%= form.password_field :password_confirmation, class: "form-control", required: true %>
+        </div>
+
+        <%= form.submit "Sign up", class: "btn btn-primary" %>
+      <% end %>
+      </div>
+    </div>
 </div>
-<% end %>
-
-<!-- 以下是注册表单的其余部分 -->
-
-  <%= form.label :name %>
-  <%= form.text_field :name %>
-
-  <%= form.label :email %>
-  <%= form.email_field :email %>
-
-  <%= form.label :password %>
-  <%= form.password_field :password %>
-
-  <%= form.label :password_confirmation, "Confirmation" %>
-  <%= form.password_field :password_confirmation %>
-
-  <%= form.submit "Create my account" %>
-<% end %>
