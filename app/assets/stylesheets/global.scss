@@ -1,43 +1,69 @@
 // global.scss
 
 .flash {
-    padding: 10px;
-    margin: 20px 0;
-    border: 1px solid transparent;
-    border-radius: 4px;
-  
-    &.notice {
-      border-color: #1e7e34;
-      background-color: #dff0d8;
-      color: #155724;
-    }
-  
-    &.alert {
-      border-color: #721c24;
-      background-color: #f8d7da;
-      color: #721c24;
-    }
-  }
-  
-  .alert-danger {
-    color: red;
-    /* 其他样式 */
+  padding: 10px;
+  margin: 20px 0;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  &.notice {
+    border-color: #1e7e34;
+    background-color: #dff0d8;
+    color: #155724;
   }
 
-  .navbar-custom-menu {
-    margin-left: 2rem; /* 或者您想要的任何值 */
+  &.alert {
+    border-color: #721c24;
+    background-color: #f8d7da;
+    color: #721c24;
   }
-  .nav-item-custom {
-    margin-right: 2rem; /* 或者您想要的任何值 */
-  }
-  .custom-navbar {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-  .navbar-custom-menu .nav-link {
-    font-size: 1.1rem; /* 调整字体大小 */
-    // color: black !important; /* 设置字体颜色为黑色 */
-  }
-  .custom-logo {
-    height: 50px; /* 或者您需要的尺寸 */
-  }
+}
+
+.alert-danger {
+  color: red;
+  /* 其他样式 */
+}
+
+.navbar-custom-menu {
+  margin-left: 2rem; /* 或者您想要的任何值 */
+}
+.nav-item-custom {
+  margin-right: 2rem; /* 或者您想要的任何值 */
+}
+.custom-navbar {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.navbar-custom-menu .nav-link {
+  font-size: 1.1rem; /* 调整字体大小 */
+  // color: black !important; /* 设置字体颜色为黑色 */
+}
+.custom-logo {
+  height: 50px; /* 或者您需要的尺寸 */
+}
+
+// 登录页面容器样式
+.container {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+// 登录卡片样式
+.card {
+  margin-top: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+}
+
+// 表单控制样式
+.form-control {
+  margin-bottom: 1rem;
+}
+
+// 提交按钮样式
+.btn-primary {
+  margin-top: 1rem;
+}
+div.background-image  {
+  background: image-url('bg2.png') no-repeat center center fixed;
+  background-size: cover;
+}

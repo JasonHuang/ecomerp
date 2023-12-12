@@ -70,4 +70,5 @@ end
 gem 'bcrypt', '~> 3.1.7'
 gem 'sassc-rails'
 gem 'execjs'
-gem 'bootstrap'
+gem "bootstrap"
+gem "jquery-rails"

@@ -1,21 +1,24 @@
 <%= render 'layouts/header' %>
 
-<h1>Login</h1>
-
-<%= form_with(scope: :session, url: login_path, method: :post) do |form| %>
-  <p>
-    <%= form.label :email %><br>
-    <%= form.text_field :email %>
-  </p>
-
-  <p>
-    <%= form.label :password %><br>
-    <%= form.password_field :password %>
-  </p>
-
-  <p>
-    <%= form.submit "Login" %>
-  </p>
-<% end %>
-
-<%= link_to 'Register', signup_path, class: 'btn btn-primary' %>
+<%# 使用 Rails 布局和视图约定 %>
+<div class="container my-5 background-image">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <%= form_with(scope: :session, url: login_path, local: true) do |form| %>
+            <div class="form-group">
+              <%= form.label :email %>
+              <%= form.email_field :email, class: 'form-control' %>
+            </div>
+            <div class="form-group">
+              <%= form.label :password %>
+              <%= form.password_field :password, class: 'form-control' %>
+            </div>
+            <%= form.submit "Log in", class: 'btn btn-primary' %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

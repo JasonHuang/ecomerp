@@ -2,4 +2,8 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 
-import "bootstrap"
+import "jquery";
+import "jquery_ujs";
+import "@popperjs/core";
+import "bootstrap";
+import "my_script";

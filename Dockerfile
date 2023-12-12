@@ -54,7 +54,7 @@ RUN bundle install && \
     rm -rf ~/.bundle/ "${BUNDLE_PATH}"/ruby/*/cache "${BUNDLE_PATH}"/ruby/*/bundler/gems/*/.git && \
     bundle exec bootsnap precompile --gemfile
 
-RUN npm install yarn -g && yarn add bootstrap && yarn install
+# RUN npm install yarn -g && yarn install
 # Copy application code
 COPY . .
 
@@ -79,7 +79,7 @@ COPY --from=build /usr/bin/npm /usr/bin/npm
 # COPY --from=build /usr/local/bin/yarn /usr/local/bin/yarn
 COPY --from=build /usr/local/bundle /usr/local/bundle
 COPY --from=build /rails /rails
-COPY --from=build /rails/node_modules /rails/app/javascript/
+# COPY --from=build /rails/node_modules /rails/app/javascript/
 
 # RUN npm install bootstrap
 
